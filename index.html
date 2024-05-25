@@ -4,46 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./img/logo.png" />
+    <link rel="stylesheet" href="./css/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
 
-      input::-webkit-outer-spin-button,
-      input::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-      }
-      input[type='number'] {
-        -moz-appearance: textfield;
-        /* Firefox */
-      }
-      .underline-animation {
-        position: relative;
-        color: black;
-      }
-      .underline-animation::before {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 0;
-        height: 2px;
-        background-color: rgb(49 46 129);
-        transition: width 0.3s ease;
-        color: rgb(49 46 129);
-      }
-      .underline-animation:hover::before {
-        width: 100%;
-      }
-      .smooth-scroll {
-        scroll-behavior: smooth;
-      }
-    </style>
     <title>Megaprinting</title>
   </head>
   <body id="home">
@@ -90,7 +56,7 @@
       <div class="container px-5 py-20 mx-auto">
         <div class="flex flex-wrap -m-4 text-center">
           <div class="p-2 md:w-1/4 sm:w-1/2 w-full">
-            <div class="border-4 border-pink-400 px-4 py-6 rounded-lg">
+            <div class="border-2 border-pink-400 px-4 py-6 rounded-lg">
               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.9" class="text-indigo-900 w-12 h-12 mb-3 inline-block" viewBox="0 0 20 19">
                 <path
                   d="M17.211,3.39H2.788c-0.22,0-0.4,0.18-0.4,0.4v9.614c0,0.221,0.181,0.402,0.4,0.402h3.206v2.402c0,0.363,0.429,0.533,0.683,0.285l2.72-2.688h7.814c0.221,0,0.401-0.182,0.401-0.402V3.79C17.612,3.569,17.432,3.39,17.211,3.39M16.811,13.004H9.232c-0.106,0-0.206,0.043-0.282,0.117L6.795,15.25v-1.846c0-0.219-0.18-0.4-0.401-0.4H3.189V4.19h13.622V13.004z"></path>
@@ -117,7 +83,7 @@
                   d="M17.684,7.925l-5.131-0.67L10.329,2.57c-0.131-0.275-0.527-0.275-0.658,0L7.447,7.255l-5.131,0.67C2.014,7.964,1.892,8.333,2.113,8.54l3.76,3.568L4.924,17.21c-0.056,0.297,0.261,0.525,0.533,0.379L10,15.109l4.543,2.479c0.273,0.153,0.587-0.089,0.533-0.379l-0.949-5.103l3.76-3.568C18.108,8.333,17.986,7.964,17.684,7.925 M13.481,11.723c-0.089,0.083-0.129,0.205-0.105,0.324l0.848,4.547l-4.047-2.208c-0.055-0.03-0.116-0.045-0.176-0.045s-0.122,0.015-0.176,0.045l-4.047,2.208l0.847-4.547c0.023-0.119-0.016-0.241-0.105-0.324L3.162,8.54L7.74,7.941c0.124-0.016,0.229-0.093,0.282-0.203L10,3.568l1.978,4.17c0.053,0.11,0.158,0.187,0.282,0.203l4.578,0.598L13.481,11.723z"></path>
               </svg>
               <h2 class="title-font font-medium text-3xl text-gray-900">4.9/5</h2>
-              <p class="leading-relaxed">Rating</p>
+              <p class="leading-relaxed">Rate</p>
             </div>
           </div>
           <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
@@ -198,7 +164,7 @@
       <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-col text-center w-full mb-20">
           <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Galery</h1>
-          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Berikut beberapa hasil dari jasa cetak kami.</p>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Berikut beberapa hasil dari jasa cetak kami</p>
         </div>
         <div class="flex flex-wrap -m-4">
           <div class="lg:w-1/3 sm:w-1/2 p-4">
@@ -270,7 +236,10 @@
       <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-col text-center w-full mb-20">
           <h1 class="text-2xl font-medium title-font mb-4 text-gray-900 tracking-widest"><strong>MEGATEAM</strong></h1>
-          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+            "Teamwork is the ability to work together toward a common vision. The ability to direct individual accomplishments toward organizational objectives. It is the fuel that allows common people to attain uncommon results." - Andrew
+            Carnegie
+          </p>
         </div>
         <div class="flex flex-wrap -m-4">
           <div class="p-4 lg:w-1/2">
@@ -387,7 +356,7 @@
 
     <!-- Footer -->
     <section class="text-stone-800 body-font" id="contact">
-      <footer class="text-black body-font bg-gradient-to-b from-white to-indigo-500">
+      <footer class="text-black body-font bg-gradient-to-b from-white from-40% to-indigo-500">
         <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
           <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
             <a class="flex title-font font-medium items-center md:justify-start justify-center text-black">
@@ -461,25 +430,6 @@
         </div>
       </footer>
     </section>
-
-    <script>
-      window.addEventListener('scroll', function () {
-        var header = document.getElementById('header');
-        var scrollPosition = window.scrollY;
-
-        if (scrollPosition > 0) {
-          header.classList.add('shadow-lg');
-        } else {
-          header.classList.remove('shadow-lg');
-        }
-      });
-    </script>
-    <script>
-      function Menu(e) {
-        let list = document.querySelector('ul');
-
-        e.name === 'menu' ? ((e.name = 'close'), list.classList.add('top-[80px]'), list.classList.add('opacity-100')) : ((e.name = 'menu'), list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'));
-      }
-    </script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

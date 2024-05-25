@@ -1,0 +1,30 @@
+html {
+  scroll-behavior: smooth;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+  /* Firefox */
+}
+.underline-animation {
+  position: relative;
+  color: black;
+}
+.underline-animation::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(49 46 129);
+  transition: width 0.3s ease;
+  color: rgb(49 46 129);
+}
+.underline-animation:hover::before {
+  width: 100%;
+}
